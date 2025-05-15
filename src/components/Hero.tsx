@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">
+      {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-subtle">
         <button 
           onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
           className="flex flex-col items-center text-gray-400 hover:text-white transition-colors"
@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
           <span className="text-sm mb-2">Scroll Down</span>
           <ChevronDown size={24} />
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };
