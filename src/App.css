@@ -1,0 +1,80 @@
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Add this to ensure elements stay visible after animation */
+.animate-fade-in {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Timeline animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInLeft 0.7s ease-out forwards;
+}
+
+.fade-in-right {
+  animation: fadeInRight 0.7s ease-out forwards;
+}
+
+/* Hover effects */
+.hover-gradient-btn {
+  background-size: 200% auto;
+  transition: all 0.5s ease;
+}
+
+.hover-gradient-btn:hover {
+  background-position: right center;
+}
+
+/* Card hover effects */
+.card-hover-rise {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-rise:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.3);
+}
